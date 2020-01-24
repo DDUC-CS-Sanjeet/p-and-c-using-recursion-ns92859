@@ -1,3 +1,7 @@
+/*
+	Submitted By : Neeraj Sharma
+	About : To find the permutation and combination using Rercursion
+*/
 #include<iostream>
 using namespace std;
 int permutation(int n, int r)
@@ -20,7 +24,7 @@ int combination(int n, int r)
 	}
 	else 
 	{
-		return ((n*1.0)/r)*combination(n-1,r-1);
+		return (1.0*combination(n-1,r-1))*n/r;
 	}
   return 0;
 }
